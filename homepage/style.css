@@ -15,7 +15,7 @@ button{
 }
 
 ::selection{
-    background-color: #7388f3;
+    color: #7388f3;
 }
 
 #navbar {
@@ -82,7 +82,7 @@ button{
 }
 
 #my-img{
-    width: 250px;
+    width: 300px;
     height: 100%;
 }
 
@@ -296,7 +296,7 @@ button{
 #projects-grid-items:not(:hover) #projects-grid-img{
     transition: 0.2s;
     filter: blur(1.5px);
-    transform: rotate(5deg);
+    transform: skew(-5deg);
 }
 
 #projects-grid-items{
@@ -313,6 +313,120 @@ button{
     border-top: 2px solid gray;
     padding-bottom: 10px;
 }
+
+.plan{
+    width: 100%;
+    height: 100vh;
+    margin-top: 20vh;
+}
+
+.inner-plan{
+    height: 100%;
+}
+
+.plan-content{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-content-2{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.plan-container{
+    height: 75vh;
+    width: 20vw;
+    background-color: rgb(250, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.plan-container:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px rgb(69, 69, 69);
+    transition: 0.3s;
+}
+
+.plan-container:hover h5{
+    text-decoration: underline;
+}
+
+.plan-container:hover #plan-number{
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #65ff84 100%);
+    color: white;
+}
+
+.plan-container:not(:hover){
+    transition: 0.2s;
+}
+
+#plan-number{
+    background-color: #ffffff;
+    width: 50%;
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20%;
+    margin-top: 20px;
+    border: 10px solid black;
+}
+
+.inner-plan-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inner-plan-content h1{
+    color: black;
+    font-weight: 400;
+}
+
+.inner-plan-content-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.inner-plan-content-2 h5{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#rate{
+    margin-top: 10vh;
+}
+
+#rate-span{
+    color: black;
+    font-weight: 600;
+}
+
+.plan-container:hover #rate-span{
+    color: rgb(218, 43, 43);
+}
+
 
 @media only screen and (max-width: 426px) {
     #logo{
@@ -346,7 +460,7 @@ button{
     }
 
     #my-img{
-        width: 200px;
+        width: 300px;
         margin-top: -40px;
     }
 
@@ -442,5 +556,42 @@ button{
     .projects-grid-container{
         flex-wrap: wrap;
     }
+
+    .inner-plan{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .plan-content{
+        width: 80%;
+        margin-top: 4vh;
+    }
+
+    .plan{
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #plan-p{
+        text-align: center;
+    }
+
+    .plan-container{
+        width: 300px;
+    }
+
+    .plan-content-2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-container:hover{
+        transform: scale(1.02);
+    }
+
+
 }
 
