@@ -58,3 +58,27 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(counter);
     });
 });
+
+
+function checkNetworkSpeed() {
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    return connection ? connection.effectiveType : "unknown";
+}
+
+
+function showLoader() {
+    const speed = checkNetworkSpeed();
+
+    if (speed === "slow-2g" || speed === "2g" || speed === "3g") {
+        setTimeout(hideLoader, 3000);
+    } else {
+        setTimeout(hideLoader, 1000);
+    }
+}
+
+function hideLoader() {
+    document.getElementById("loader-main").style.display = "none";
+    document.getElementById("content").style.display = "block";
+}
+
+showLoader();
