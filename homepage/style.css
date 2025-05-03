@@ -710,7 +710,6 @@ form textarea{
 
     #about {
         flex-direction: column; 
-        height: auto; 
     }
 
     .about-inner {
@@ -739,7 +738,7 @@ form textarea{
     }
 
     #service{
-        height: 280vh;
+        height: 225vh;
     }
 
     .service-content{
@@ -782,7 +781,7 @@ form textarea{
     }
 
     #projects{
-        height: 315vh;
+        height: 255vh;
     }
 
     #projects-h1{
