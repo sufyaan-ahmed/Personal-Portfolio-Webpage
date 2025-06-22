@@ -15,51 +15,8 @@ button{
 }
 
 ::selection{
-    color: #7388f3;
-}
-
-#loader-main {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f0f0f0;
-    opacity: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    z-index: 1000;
-}
-
-#loader {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    border: 17px solid rgb(0, 64, 255);
-    border-radius: 50%;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-    animation: rot5 1s infinite;
-}
-  
-@keyframes rot5 {
-    0% {
-      transform: rotate(0);
-    }
-  
-    50% {
-      transform: rotate(180deg);
-      border-top-color: rgb(64, 173, 250);
-      border-bottom-color: rgb(51, 59, 133);
-      border-right-color: transparent;
-      border-left-color: transparent;
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
+    background-color: #4158D0;
+    color: white;
 }
 
 #navbar {
@@ -138,6 +95,7 @@ button{
     position: relative;
     padding: 0 20px;
     background-color: #c9baa5;
+    border-bottom: 1px solid black;
 }
 
 .about-inner{
@@ -184,7 +142,7 @@ button{
 #service{
     width: 100%;
     height: 110vh;
-    background-color: #bcaf9b;
+    background-color: #c9baa5;
 }
 
 .inner-service{
@@ -241,7 +199,7 @@ button{
 .counter{
     width: 100%;
     height: 40vh;
-    background-color:#4a505a;
+    background-color:#444850;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,8 +246,9 @@ button{
 #projects{
     width: 100%;
     height: 140vh;
-    background-color: #444850;
-    color: white;
+    background-color: #bcaf9b;
+    color: black;
+    border-bottom: 1px solid black;
 }
 
 .projects-content{
@@ -358,9 +317,11 @@ button{
 
 #plan{
     width: 100%;
-    height: 120vh;
-    background-color: #3a3d44;
-    color: white;
+    height: auto;
+    background-color: #bcaf9b;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 7vh;
 }
 
 .inner-plan{
@@ -381,6 +342,7 @@ button{
     width: 100%;
     height: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 10vh;
 }
@@ -393,7 +355,9 @@ button{
     align-items: center;
     cursor: pointer;
     margin: 10px;
-    background-color: #4f535d;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(69, 69, 69);
+    background-color: #ccb698;
 }
 
 .plan-container:hover{
@@ -407,7 +371,7 @@ button{
 }
 
 .plan-container:hover #plan-number{
-    background-image: linear-gradient(43deg, #36383c 0%, #5b606d 46%, #6f7586 100%);
+    background-image: linear-gradient(43deg, #1e242c 0%, rgb(69, 72, 81) 46%, #6f7586 100%);
     color: white;
 }
 
@@ -476,8 +440,8 @@ button{
 #posts{
     width: 100%;
     height: auto;
-    background-color: #313945;
-    color: white;
+    background-color: #bcaf9b;
+    color: black;
 }
 
 .inner-posts{
@@ -486,7 +450,7 @@ button{
     align-items: center;
     justify-content: center;
     padding-bottom: 16vh;
-}
+}   
 
 .posts-content{
     width: 60%;
@@ -503,10 +467,12 @@ button{
 }
 
 .posts-content-2{
-    margin-top: 10vh;
     display: flex;
-    gap: 30px;
-    color: black;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10vh;
 }
 
 .posts-inner-container{
@@ -571,6 +537,10 @@ button{
 form{
     display: flex;
     flex-direction: column;
+}
+
+input, textarea{
+    border: 2px solid #2c2c2c;
 }
 
 form input{
@@ -781,7 +751,8 @@ form textarea{
     }
 
     #projects{
-        height: 255vh;
+        height: auto;
+        padding-bottom: 5vh;
     }
 
     #projects-h1{
@@ -825,6 +796,7 @@ form textarea{
     .plan-content-2{
         flex-direction: column;
         align-items: center;
+        display: grid;
     }
 
     .plan-container:hover{
@@ -881,3 +853,157 @@ form textarea{
     }
 }
 
+@media only screen and (max-width: 768px) and (min-width: 427px) {
+    #plan{
+    width: 100%;
+    height: auto;
+    background-color: #bcaf9b;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.inner-plan{
+    height: 100%;
+    padding-bottom: 8vh;
+}
+
+.plan-content{
+    width: 100%;
+    height: 20vh;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-content-2{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-top: 10vh;
+}
+    
+.plan-container{
+    height: 75vh;
+    width: 20vw;
+    min-width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(69, 69, 69);
+    background-color: #ccb698;
+}
+
+ .inner-fir-body{
+        flex-wrap: wrap;
+    }
+
+    #my-img{
+        width: 300px;
+        margin-top: -40px;
+    }
+
+    #fir-body-h1{
+        font-size: 35px;
+    }
+
+    .fir-body-content{
+        width: 300px;
+    }
+
+    #about {
+        flex-direction: column; 
+    }
+
+    .about-inner {
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    #qr-code {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px; 
+    }
+
+    .about-content-2 {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    #about-h1 {
+        font-size: 24px;
+    }
+
+    #about-h3 {
+        font-size: 12px;
+    }
+
+    #service{
+        height: 225vh;
+    }
+
+    .service-content{
+        width: 90%;
+    }
+
+    .service-content-2{
+        margin-top: 5vh;
+        height: auto;
+        width: 100%;
+    }
+
+    .service-grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #service-grid-items{
+        width: 80%;
+    }
+
+       #footer{
+        height: auto;
+    }
+
+    .inner-footer{
+        display: block;
+        height: auto;
+        width: auto;
+        padding-top: 10vh;
+    }
+
+    .footer-container-1{
+        color: white;
+        width: 50vw;
+    }
+
+    .footer-container-2 input{
+        width: 260px;
+    }
+
+    .footer-container-2 textarea{
+        width: 270px;
+    }
+
+    .footer-container-3{
+        margin-top: 1vh;
+    }
+
+    .social-links i{
+        line-height: 40px;
+    }
+
+    .social-links{
+        padding-bottom: 30px;
+    }
+
+}
