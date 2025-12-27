@@ -3,383 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sufyan Ahmed | mee...</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/site icon.png" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Sufyan Ahmed</title>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous" defer></script> 
+    </head>
 <body>
-  <div id="loader-main"><div id="loader"></div></div>
-  <div id="content" style="display: none;">
-  <div id="navbar">
-    <nav style="background-color: rgba(255, 255, 255, 0.6);" class="navbar navbar-expand-lg">
-        <div class="container">
-        <img id="logo" class="navbar-brand" src="./images/channel logo.png">
-          <a style="font-family: monospace;" class="navbar-brand" href="#">Sufyan Ahmed</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#service">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#plan">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Blog
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#posts">Blog Home</a></li>
-                  <li><a class="dropdown-item" href="#projects">Blog Single</a></li>
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="#" class="cs-logo" aria-label="back to home">
+            <img src="channel logo.png" style="height: 50px;" alt="logo" width="250" height="29" aria-hidden="true" decoding="async"> <h4 style="font-size: 35px; margin-top: 15px; margin-left: 70px;">Sufi<span style="color: rgb(6, 255, 172);">.</span></h4>
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="#" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#about" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <a href="#skills" class="cs-li-link">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#projects" class="cs-li-link">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#contact" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
                 </ul>
-                <li class="nav-item">
-                <a class="nav-link" href="#footer">Contact</a>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <div class="fir-body">
-        <div class="inner-fir-body">
-            <div class="fir-body-content">
-                <h3 id="fir-body-h3">THIS IS ME</h3>
-                <h1 id="fir-body-h1">SUFYAN AHMED</h1>
-                <p id="fir-body-p">You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.</p>
             </div>
-            <div class="fir-body-content-2">
-                <img src="images/profile-pic (2)-bgremoved.png" alt="my-image" id="my-img">
+        </nav>
+        <div class="cs-contact-group">
+            <a href="tel:+84 1985 33 999" class="cs-phone">
+                <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                +92 306 2806717
+            </a>
+            <div class="cs-social">
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://www.instagram.com/sufiahmed.io/?hl=en" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
             </div>
         </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
     </div>
+</header>
+                                
 
-    <div id="about">
-        <div class="about-inner">
+    <main>
+        <section id="hero" class="hero section-padding">
+            <div class="hero-content">
+                <p class="greeting">Hi, my name is</p>
+                <h1>Sufyan Ahmed</h1>
+                <h2>Junior Web Developer (Student)</h2>
+                <p class="intro-text">
+                    Passionate about creating elegant and responsive user interfaces. I turn ideas into exceptional digital experiences.
+                </p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <svg viewBox="0 0 100 100" class="abstract-shape">
+                    <circle cx="200" cy="200" r="40" fill="var(--color-primary-light)" opacity="0.3"/>
+                </svg>
+            </div>
+        </section>
+
+        <section id="about" class="about section-padding container">
+            <h3>About Me</h3>
             <div class="about-content">
-                <img src="images/Sufyan Ahmed-QR.png" alt="QR-code" id="qr-code">
+                <p>
+                    I'm a dedicated student currently focused on mastering the fundamentals of web development. My journey started with a fascination for how websites come to life, and it quickly grew into a passion for **Frontend development**. I thrive on the challenge of clean code, pixel-perfect designs, and solving complex UI/UX problems.
+                </p>
+                <p>
+                    **Learning Journey:** My path has been hands-on, building small projects with **HTML, CSS, and JavaScript** to solidify core concepts. I'm actively expanding my knowledge into modern libraries like **React** to build scalable and component-based applications. I believe in continuous learning and leveraging tools like Git and GitHub for collaborative and efficient version control.
+                </p>
+                <a href="#contact" class="link-text">Let's connect and build something great!</a>
             </div>
-            <div class="about-content-2">
-                <h3 id="about-h3">About Me</h3>
-                <h1 id="about-h1">Personal Details</h1>
-                <p id="about-p">Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <div id="service">
-        <div class="inner-service">
-            <div class="service-content">
-            <h1 id="service-h1">My Offered Services</h1>
-            <p id="service-p">At about this time of year, some months after New Years resolutions have been made and kept, or made and neglected.</p>
-        </div>
-        <div class="service-content-2">
-            <div class="service-grid-container">
-                <div id="service-grid-items">
-                    <i id="service-i" class="fa-solid fa-chart-pie"></i>
-                    <h2 id="service-h2">Web Design</h2>
-                    <p id="service-p">“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
-                    <details>
-                      <summary>Read More</summary>
-                      <p style="font-size: 12px; color: gray;">We will web design by HTML, CSS and JS and will provide you quick service</p>
-                    </details>
+        <section id="skills" class="skills section-padding container">
+            <h3>My Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h4>HTML5</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 95%;"></div></div>
                 </div>
-                <div id="service-grid-items">
-                    <i id="service-i" class="fa-solid fa-code"></i>
-                    <h2 id="service-h2">Web Development</h2>
-                    <p id="service-p">f you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions</p>
-                    <details>
-                      <summary>Read More</summary>
-                      <p style="font-size: 12px; color: gray;">We will develop website with Database, SQL, PHP</p>
-                    </details>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h4>CSS3</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 90%;"></div></div>
                 </div>
-                <div id="service-grid-items">
-                    <i id="service-i" class="fa-solid fa-film"></i>
-                    <h2 id="service-h2">Video Editing</h2>
-                    <p id="service-p">Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.</p>
-                    <details>
-                      <summary>Read More</summary>
-                      <p style="font-size: 12px; color: gray;">We will edit your video with powerful software incudes(memes, videos, pictures and etc)</p>
-                    </details>
+                <div class="skill-card">
+                    <i class="fab fa-js-square"></i>
+                    <h4>JS</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 67%;"></div></div>
                 </div>
-                <div id="service-grid-items">
-                    <i id="service-i" class="fa-brands fa-wordpress"></i>
-                    <h2 id="service-h2">WordPress</h2>
-                    <p id="service-p">Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.</p>
-                    <details>
-                      <summary>Read More</summary>
-                      <p style="font-size: 12px; color: gray;">A high level web design maker, quick and efficient</p>
-                    </details>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h4>React</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 77%;"></div></div>
                 </div>
-                <div id="service-grid-items">
-                    <i id="service-i" class="fa-brands fa-python"></i>
-                    <h2 id="service-h2">Python</h2>
-                    <p id="service-p">Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.</p>
-                    <details>
-                      <summary>Read More</summary>
-                      <p style="font-size: 12px; color: gray;">I have made too many projects on Python, and I am learning it</p>
-                    </details>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h4>Git</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 75%;"></div></div>
                 </div>
-                <div id="service-grid-items">
-                    <i id="service-i" class="fa-solid fa-paintbrush"></i>
-                    <h2 id="service-h2">Graphic Design</h2>
-                    <p id="service-p">You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.</p>
-                    <details>
-                      <summary>Read More</summary>
-                      <p style="font-size: 12px; color: gray;">graphic design by powerful platforms, includes(banners, thumbnail, logo and etc)</p>
-                    </details>
+                <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <h4>GitHub</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 70%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <h4>Wordpress</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <h4>MySQL, PhpMyAdmin</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 70%;"></div></div>
+                </div>
+                 <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <h4>PHP</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 54%;"></div></div>
+                </div>
+                 <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <h4>Video Editing(Capcut)</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 80%;"></div></div>
+                </div>
+                 <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <h4 style="font-size: 15px;">Video Editing(Alight Motion)</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 60%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <h4>Digital Marketing</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 79%;"></div></div>
                 </div>
             </div>
-        </div>
-        </div>
-    </div>
-  </div>
-    
-    <div style="background-color: #1e242c;" class="counter">
-      <div class="counter-div">
-          <div class="counter-items">
-              <i class="fa-solid fa-clipboard-list"></i>
-              <div class="counter-num" data-target="22">0</div>
-              <h3 id="counter-h3">Projects Completed</h3>
-          </div>
-          <div class="counter-items">
-              <i class="fa-solid fa-user-tie"></i>
-              <div class="counter-num" data-target="40">0</div>
-              <h3 id="counter-h3">Real Professionals</h3>
-          </div>
-          <div class="counter-items">
-            <i class="fa-solid fa-mug-hot"></i>
-              <div class="counter-num" data-target="10">0</div>
-              <h3 id="counter-h3">Cups of Coffee</h3>
-          </div>
-          <div class="counter-items">
-              <i class="fa-solid fa-smile"></i>
-              <div class="counter-num" data-target="50">0</div>
-              <h3 id="counter-h3">Happy Clients</h3>
-          </div>
-      </div>
-  </div>
+        </section>
 
-  <div id="projects">
-    <div class="inner-projects">
-      <div class="projects-content">
-        <h1 id="projects-h1">Our Latest Featured Projects</h1>
-        <h3 id="projects-h3">Who are in extremely love with eco friendly system</h3>
-      </div>
-      <div class="projects-content-2">
-        <div class="projects-grid-container">
-          <div id="projects-grid-items">
-            <img src="images/hover-image-effect.png" alt="image" id="projects-grid-img">
-            <h3 id="projects-grid-h3">Image Hover Effect</h3>
-            <span style="color: rgb(206, 26, 26);">GitHub Repo</span>
-          </div>
-          <div id="projects-grid-items">
-            <img src="images/personal-webpage-image.png" alt="image" id="projects-grid-img">
-            <h3 id="projects-grid-h3">Personal Webpage</h3>
-          </div>
-          <div id="projects-grid-items">
-            <img src="images/python-repo-image.png" alt="image" id="projects-grid-img">
-            <h3 id="projects-grid-h3">Python Repository</h3>
-            <span style="color: rgb(194, 18, 18); margin-bottom: 10px;">not completed</span>
-          </div>
-        </div>
-          <div class="projects-grid-container">
-          <div id="projects-grid-items">
-            <img src="images/webuiler-webpage-image.png" alt="image" id="projects-grid-img">
-            <h3 id="projects-grid-h3">WEBuilder Webpage</h3>
-          </div>
-          <div id="projects-grid-items">
-            <img src="images/edgecut-webpage-image.png" alt="image" id="projects-grid-img">
-            <h3 id="projects-grid-h3">EdgeCut Webpage</h3>
-        </div>
-        </div>
-       </div>
-    </div>
-  </div>
-
-    <div id="plan">
-      <div class="inner-plan">
-        <div class="plan-content">
-          <h1 id="plan-h1">Choose Your Plan</h1>
-          <p id="plan-p">When someone does something that they know that they should'nt do did they</p>
-        </div>
-        <div class="plan-content-2">
-          <div class="plan-container">
-            <div id="plan-number">01</div>
-            <div class="inner-plan-content">
-              <h1>Economy</h1>
-              <h4>For The Indivisuals</h4>
+        <section id="projects" class="projects section-padding container">
+            <h3>Featured Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h4>Notes App</h4>
+                    <p>This project is developed as part of Internship Task-1, where one project was required to be completed from the given options. I chose to build a Notes Application using React (Vite).</p>
+                    <div class="project-links">
+                        <a href="https://github.com/sufyaan-ahmed/Syntecxhub_Notes_App" target="_blank" class="project-link-button">Live Demo</a>
+                        <a href="https://github.com/sufyaan-ahmed/Syntecxhub_Notes_App/tree/main/notes-app" target="_blank" class="project-link-button secondary">Code (GitHub)</a>
+                    </div>
+                </div>
+                <div style="background-color: rgb(250, 225, 87); box-shadow: 8px 13px 18px rgb(86, 86, 86);" class="project-card">
+                    <h4>ScholarMate</h4>
+                    <p>An AI-powered assistant helping students explore <u>scholarships</u>, connect with professors, and plan their study abroad journey. Our Team <strong>NeuroScholar</strong> won the Hackathon held by DigitalOcean. Suceeded to achieve <strong>1<sup>st</sup> place</strong> in the Hackathon.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/sufyaan-ahmed/ScholarMate-Hackathon-Project" target="_blank" class="project-link-button">Live Demo</a>
+                        <a href="https://github.com/sufyaan-ahmed/ScholarMate-Hackathon-Project/tree/main/src" target="_blank" class="project-link-button secondary">Code (GitHub)</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Developer Portfolio (This Site!)</h4>
+                    <p>Built from scratch using modern HTML, CSS (Flexbox/Grid), and basic JavaScript for smooth interactivity.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/sufyaan-ahmed/Personal-Portfolio-Webpage/tree/main/homepage" target="_blank" class="project-link-button secondary">Code (GitHub)</a>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <h4>WeBuilders - Webpage</h4>
+                    <p>This is a front-end portfolio website created for a construction company. The purpose of this website is to present the company’s projects, services, and overall profile in a clean and professional way.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/sufyaan-ahmed/webuilders-webpage" target="_blank" class="project-link-button">Live Demo</a>
+                        <a href="https://github.com/sufyaan-ahmed/webuilders-webpage/tree/main/homepage " target="_blank" class="project-link-button secondary">Code (GitHub)</a>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <h4>Edgecut - Webpage</h4>
+                    <p>A minimalist, non-responsive furniture showcase with intuitive navigation and an elegant, mobile-first design focused on high-quality product visuals for a seamless user experience.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/sufyaan-ahmed/edgecut-webpage" target="_blank" class="project-link-button">Live Demo</a>
+                        <a href="https://github.com/sufyaan-ahmed/edgecut-webpage/tree/main/homepage" target="_blank" class="project-link-button secondary">Code (GitHub)</a>
+                    </div>
+                </div>
             </div>
-            <div class="inner-plan-content-2">
-              <h5>Secure Online Transfer</h5>
-              <h5>Unlimited Styles for interface</h5>
-              <h5>Reliable Customer Service</h5>
+        </section>
+
+        <section id="contact" class="contact section-padding container">
+            <h3>Get In Touch</h3>
+            <p class="contact-intro">I'm currently open to new opportunities and collaborations. Send me a message!</p>
+            
+            <div class="contact-grid">
+                
+                <div class="contact-info">
+                    <h4>Find me on:</h4>
+                    <div class="social-links">
+                        <a href="mailto:alex.chen@example.com" target="_blank" class="social-link">
+                            <i class="fas fa-envelope"></i> sufiahmed.dev@gmail.com
+                        </a>
+                        <a href="https://github.com/sufyaan-ahmed" target="_blank" class="social-link">
+                            <i class="fab fa-github">@</i> Github: sufyaan-ahmed
+                        </a>
+                        <a href="https://www.linkedin.com/in/msufyanahmed/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin">@</i> Linkedin: sufyaan-ahmed
+                        </a>
+                        <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i> Sufyan Ahmed
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h4>Send a quick message:</h4>
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/xqekpbyw" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input placeholder="name????" type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input placeholder="username@example.com" type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea placeholder="Be Informal! and write something Extra Ordinary...." id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
             </div>
-            <div class="inner-plan-content-3">
-              <h3 id="rate"><span id="rate-span">5000</span> PKR</h3>
-            </div>
-          </div>
-          <div class="plan-container">
-            <div id="plan-number">02</div>
-            <div class="inner-plan-content">
-              <h1>Business</h1>
-              <h4>For The Indivisuals</h4>
-            </div>
-            <div class="inner-plan-content-2">
-              <h5>Secure Online Transfer</h5>
-              <h5>Unlimited Styles for interface</h5>
-              <h5>Reliable Customer Service</h5>
-            </div>
-            <div class="inner-plan-content-3">
-              <h3 id="rate"><span id="rate-span">8000</span> PKR</h3>
-            </div>
-          </div>
-          <div class="plan-container">
-            <div id="plan-number">03</div>
-            <div class="inner-plan-content">
-              <h1>Premium</h1>
-              <h4>For The Indivisuals</h4>
-            </div>
-            <div class="inner-plan-content-2">
-              <h5>Secure Online Transfer</h5>
-              <h5>Unlimited Styles for interface</h5>
-              <h5>Reliable Customer Service</h5>
-            </div>
-            <div class="inner-plan-content-3">
-              <h3 id="rate"><span id="rate-span">13000</span> PKR</h3>
-            </div>
-          </div>
-          <div class="plan-container">
-            <div id="plan-number">04</div>
-            <div class="inner-plan-content">
-              <h1>Exclusive</h1>
-              <h4>For The Indivisuals</h4>
-            </div>
-            <div class="inner-plan-content-2">
-              <h5>Secure Online Transfer</h5>
-              <h5>Unlimited Styles for interface</h5>
-              <h5>Reliable Customer Service</h5>
-            </div>
-            <div class="inner-plan-content-3">
-              <h3 id="rate"><span id="rate-span">18000</span> PKR</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div id="posts">
-      <div class="inner-posts">
-        <div class="posts-content">
-          <h1>Post From Our Socials</h1>
-          <p>You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving and expanding the business</p>
-        </div>
-        <div class="posts-content-2">
-         <div class="posts-inner-container">
-            <div class="posts-inner-content-1">
-            <a target="_blank" href="https://www.youtube.com/shorts/mi6HREyw_Nw"><img src="images/Sd781746149e3494a85582e65e52842a8e.jpg" alt="post"></a>
-          </div>
-          <div class="posts-inner-content-2">
-            <h5 style="color: black; font-style: italic; font-size: 13px; margin-left: 10px;"><img style="width: 30px; height: 30px; border: 2px solid rgb(68, 65, 65); margin-right: 10px;" src="images/profile-pic (2).png" alt="">Sufyan Ahmed</h5>
-            <i style="margin-left: 40px;" class="fa-regular fa-eye"> 3.9K</i>
-            <i style="margin-left: 15px;"  class="fa-regular fa-thumbs-up"> 105</i>
-          </div>
-          </div>
-          <div class="posts-inner-container">
-            <div class="posts-inner-content-1">
-            <a target="_blank" href="https://www.youtube.com/shorts/bOvhruK9hVk"><img src="images/Sbcd6832e5c03439d9676799162d53322K.jpg" alt="post"></a>
-          </div>
-          <div class="posts-inner-content-2">
-            <h5 style="color: black; font-style: italic; font-size: 13px; margin-left: 10px;"><img style="width: 30px; height: 30px; border: 2px solid rgb(68, 65, 65); margin-right: 10px;" src="images/profile-pic (2).png" alt="">Sufyan Ahmed</h5>
-            <i style="margin-left: 40px;" class="fa-regular fa-eye"> 736</i>
-            <i style="margin-left: 15px;"  class="fa-regular fa-thumbs-up"> 28</i>
-          </div>
-          </div>
-          <div class="posts-inner-container">
-            <div class="posts-inner-content-1">
-            <a target="_blank" href="https://www.youtube.com/shorts/7iwh70qwUXs"><img src="images/Sc7fd4fe4e6254070b62fdf49d87af5f1f.jpg" alt="post"></a>
-          </div>
-          <div class="posts-inner-content-2">
-            <h5 style="color: black; font-style: italic; font-size: 13px; margin-left: 10px;"><img style="width: 30px; height: 30px; border: 2px solid rgb(68, 65, 65); margin-right: 10px;" src="images/profile-pic (2).png" alt="">Sufyan Ahmed</h5>
-            <i style="margin-left: 40px;" class="fa-regular fa-eye"> 502</i>
-            <i style="margin-left: 15px;"  class="fa-regular fa-thumbs-up"> 12</i>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        </section>
+    </main>
 
-    <div id="footer">
-      <div class="inner-footer">
-        <div class="footer-container-1">
-          <h1>About Me</h1>
-          <p>We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</p>
-          <p>Copyright ©2024 All rights reserved To Sufyan Developer | This webpage is made with ❤️ by Colorlib</p>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2025 Sufyan Ahmed, All rights reserved by me :).</p>
+    </footer>
 
-        <div class="footer-container-2">
-          <h1>Newsletter</h1>
-
-          <form action="https://formspree.io/f/mkgnrqnl"  method="POST">
-
-            <label for="email">
-              <input type="email" name="email" placeholder="Enter Your Email">
-            </label>
-
-            <label for="textarea">
-              <textarea name="message" maxlength="600" placeholder="Write A Helpful Message...(min 400)"></textarea>
-            </label>
-
-            <button class="boton-elegante">SEND</button>
-
-          </form>
-
-       </div>
-
-       <div class="footer-container-3">
-        <h1>Follow Me</h1>
-        <p>Let us be social</p>
-        <div class="social-links">
-          <a href="https://github.com/sufyaan-ahmed?tab=repositories"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/mohammad-sufyan-ahmed/"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.youtube.com/channel/UC383PWfpOG311etOGuOGghQ"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.instagram.com/sufyanahmed30/"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=61558169017895"><i class="fa-brands fa-facebook"></i></a>
-        </div>
-       </div>
-
-       
-      </div>
-    </div>
-    
-
-
-  
-  
-  
-  
-  
-  
-  </div>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>    
 </body>
 </html>
