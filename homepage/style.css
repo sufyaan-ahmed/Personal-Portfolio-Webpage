@@ -137,14 +137,16 @@ h3 { font-size: 1.75rem; }
 }
 
 .hero-image {
-    width: 320px;
-    height: 320px;
+    width: 370px;
+    height: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("profile-pic\ \(2\).png");
+    background-image: url("profile-pic\ \(3\).png");
     background-size: cover;
     background-position: center;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 .abstract-shape {
@@ -421,7 +423,6 @@ h3 { font-size: 1.75rem; }
     color: var(--color-white);
     font-size: 0.9rem;
 }
-
 /* --- 10. Responsive Design (Mobile-First) --- */
 
 /* Tablet and smaller laptops */
